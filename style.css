@@ -46,7 +46,13 @@ main{
 }
 
 main > section{
-    margin-top: 130px;
+ margin-top: 130px;
+}
+
+
+.navbar, .banner, footer{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-title{
@@ -80,10 +86,6 @@ main > section{
     font-weight: 500;
 }
 
-.navbar, .banner{
-    max-width: 1440px;
-    margin: 0 auto;
-}
 
 
 /* banner related style */
@@ -151,13 +153,13 @@ main > section{
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: 124px; */
 
 }
 
 
 .fact-description{
     max-width: 542px;
+    margin-bottom: 40px;
 }
 .fact-card{
     border: 2px solid #FF900E;
@@ -167,7 +169,6 @@ main > section{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
 }
 
 .fact-number{
@@ -183,6 +184,43 @@ main > section{
     margin-top: 10px;
 }
 
+
+
+/* sponsor style */
+
+
+.sponsor-info{
+   max-width: 540px;
+   margin: 50px auto;
+   text-align: center;
+}
+
+.sponsors-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsors-container img{
+    filter: grayscale(100%);
+}
+
+footer{
+    margin-top: 130px;
+    text-align: center;
+
+}
+
+.copyright{
+    font-size: 1.15rem;
+    background-color: #FFF4E7;
+    padding: 38px ;
+    border-radius: 8px;
+}
+
+
+
+
+
+
 /* Media screen query */
 
 @media screen and (max-width:576px) {
@@ -192,12 +230,27 @@ main > section{
         flex-direction: column;
     }
 
-    .img-container{
+    .img-container, 
+    .fact-container,
+    .sponsors-container{
         grid-template-columns: repeat(1, 1fr);
     }
 
     .feature-content{
         margin-left: 40px;
+    }
+
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
+    }
+     
+    .sponsors-container{
+        gap:20px;
+        justify-items: center;        
+    }
+    .copyright{
+        font-size:1rem ;
     }
 
 }
@@ -212,4 +265,20 @@ main > section{
     .feature-content{
         margin: 50px auto;
     }
+    .some-facts{
+       margin-left: 60px;
+       
+    }
+    .fact-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+   
+}
+
+.sponsors-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
 }
