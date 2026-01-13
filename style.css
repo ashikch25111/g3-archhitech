@@ -112,7 +112,7 @@ main > section{
 
 
 
-/* Feature related style */
+/* teams related style */
 
 
 .teams{
@@ -144,6 +144,47 @@ main > section{
     margin-bottom: 32px;
 }
 
+
+/* Features style */
+
+.our-features{
+    gap: 54px;
+}
+
+.features-title{
+    padding-left: 21px;
+    border-left: 5px solid #FF900E ;
+}
+.features-description{
+    margin-bottom: 30px;
+}
+.features-card{
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+   border-radius: 8px;
+   margin-bottom: 20px;
+}
+
+.features-card .features-h4{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.features-image img{
+    padding-left: 90px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#experience-text{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
 
 
 
