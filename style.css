@@ -83,6 +83,9 @@ main > section{
     list-style: none;
     margin-right: 30px;
 }
+.nav-item:hover{
+    border-bottom: 2px solid #424242 ;
+}
 .brand{
     font-weight: bold;
     font-size: 3rem;
